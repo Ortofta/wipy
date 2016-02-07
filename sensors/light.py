@@ -13,7 +13,8 @@ from machine import Pin
 def isLight(dataPin):
     """ Check if it's light or dark, using a CEG013600 ambient light sensor connected to the GPIO pin named by dataPin """
     light_in = Pin(dataPin, mode=Pin.IN)
-    if light_in = 1:
+    if light_in.value() == 1:
+        """ 1 means dark """
         return false
     else:
         return true
