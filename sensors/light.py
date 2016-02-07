@@ -15,7 +15,7 @@ def isLight(dataPin):
     light_in = Pin(dataPin, mode=Pin.IN)
     if light_in.value() == 1:
         """ 1 means dark """
-        return false
+        return False
     else:
-        return true
+        return True
 
